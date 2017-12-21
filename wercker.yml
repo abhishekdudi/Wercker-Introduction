@@ -57,7 +57,7 @@
      - script:
          name: Pull newest docker images
          code: |
-           ssh $DEV_REMOTE_USER@$DEV_REMOTE_HOST sudo docker pull devopscafe/amusement-park
+           ssh $DEV_REMOTE_USER@$DEV_REMOTE_HOST sudo docker pull abhishekdudi/amusement-park
      - script:
          name: Stop all running containers
          code: |
