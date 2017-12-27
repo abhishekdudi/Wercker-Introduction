@@ -61,7 +61,7 @@
      - script:
          name: Stop all running containers
          code: |
-           ssh $DEV_REMOTE_USER@$DEV_REMOTE_HOST docker stop abhi-system || echo ‘failed to stop running container’
+           ssh $DEV_REMOTE_USER@$DEV_REMOTE_HOST docker stop $(docker ps -aq) || echo ‘failed to stop running container’
      - script:
          name: Remove stopped service/containers
          code: |
